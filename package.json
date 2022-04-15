@@ -1,0 +1,18 @@
+{
+  "name": "lqapp",
+  "version": "1.0.0",
+  "main": "electron/index.js",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": ["**/main/**"]
+  },
+  "scripts": {
+    "cli": "node ./packages/script/cli.mjs",
+    "clies": "esno ./packages/script/cli.ts",
+    "clits": "ts-node ./packages/script/cli.ts"
+  }
+}
